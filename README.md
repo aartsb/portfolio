@@ -1,6 +1,6 @@
-# Portfolio
+# Portfolio link: https://aartsb.github.io/portfolio/ 
 
-My portfolio built with React + Vite.
+My portfolio is built with React + Vite.
 
 ## Tech Stack
 
