@@ -159,13 +159,13 @@ function App() {
                 <ProjectCard
                   title="Cloud/Terraform Project"
                   description="VM Deployment with Policy as Code"
-                  image="/terraform-project.png"
+                  image={`${import.meta.env.BASE_URL}terraform-project.png`}
                   link="https://github.com/aartsb/terraformproject"
                 />
                 <ProjectCard
                   title="Homie"
                   description="High fidelity prototype of a one stop home repair and services app"
-                  image="/homie-project.png"
+                  image={`${import.meta.env.BASE_URL}homie-project.png`}
                   link="https://www.figma.com/proto/IMVy0jmPCC9w5nSim7uyJB/Hi-Fi-2?node-id=47%3A3533&scaling=scale-down"
                   imagePosition="center 25%"
                 />
