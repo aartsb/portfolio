@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-unravel-black: #0a0a0a;
+  --color-unravel-thread: #e5e5e5;
+  --color-unravel-accent: #00f0ff;
+
+  --font-sans: 'Inter', sans-serif;
+
+  --animate-unravel-slow: unravel 3s ease-in-out forwards;
+
+  @keyframes unravel {
+    0% {
+      stroke-dasharray: 0, 1000;
+    }
+
+    100% {
+      stroke-dasharray: 1000, 0;
+    }
+  }
+}
+
+/* Custom Utilities */
+.thread-line {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 2s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Base styles */
+:root {
+  background-color: var(--color-unravel-black);
+  color: var(--color-unravel-thread);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  cursor: none;
+  /* Hide default cursor */
+}
+
+a,
+button {
+  cursor: none;
+  /* Ensure links don't show pointer */
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-unravel-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
