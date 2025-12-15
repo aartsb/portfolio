@@ -41,7 +41,7 @@ const Background = () => {
                 playsInline
                 preload="auto"
             >
-                <source src="/unravel-bg.mp4" type="video/mp4" />
+                <source src={`${import.meta.env.BASE_URL}unravel-bg.mp4`} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
 
